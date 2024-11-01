@@ -30,6 +30,8 @@
         <link rel="stylesheet" href="assets/css/main.css">
         <!--<< Style.css >>-->
         <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
@@ -211,15 +213,17 @@
                                             </div>
                                             <div class="content">
                                                 <h5>电子邮件</h5>
-                                                <a>不知道捏</a><!-- <br>
-                                                <a href="mailto:info@example.com" class="link">info@example.com</a>-->
+                                                <p>Harry:</p><a href="mailto:harry@jinqitrip.com" class="link">harry@jinqitrip.com</a> <br>
+                                                <p>fQwQf:</p><a href="mailto:fQwQf@jinqitrip.com" class="link">fQwQf@jinqitrip.com</a> <br>
+                                                <p>Cirdon:</p><a href="mailto:huikongjingji@jinqitrip.com" class="link">huikongjingji@jinqitrip.com</a> <br>
+                                                <p>Xu:</p><a href="mailto:xu@jinqitrip.com" class="link">xu@jinqitrip.com</a> <br>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 wow fadeInUp" data-wow-delay=".9s">
                                         <div class="info-items">
                                             <div class="icon">
-                                                <i class="fad fa-share-alt"></i>
+                                                <i class="fa fa-weixin"></i>
                                             </div>
                                             <div class="content">
                                                 <h5>企业微信</h5>
