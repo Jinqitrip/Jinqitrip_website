@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cmn-Hans">
     <!--<< Header Area >>-->
     <head>
+
+        <link rel="icon" href="/assets/img/logo/logo_sqr.png"/>
+        
         <!-- ========== Meta Tags ========== -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
