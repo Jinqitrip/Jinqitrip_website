@@ -142,62 +142,7 @@
         <div class="offcanvas__overlay"></div>
 
         
-
-        <!-- Header Area Start -->
-        <header class="header-section-1">
-            <div id="header-sticky" class="header-1">
-                <div class="container-fluid">
-                    <div class="mega-menu-wrapper">
-                        <div class="header-main">
-                            <div class="header-left">
-                                <div class="logo">
-                                    <a href="index.php" class="header-logo">
-                                        <img src="assets/img/logo/logo.png" alt="logo-img">
-                                    </a>
-                                </div>
-                                <div class="mean__menu-wrapper">
-                                    <div class="main-menu">
-                                        <nav id="mobile-menu">
-                                            <ul>
-                                                <li>
-                                                    <a href="http://post.jinqitrip.com.cn">文章一览</a>
-                                                </li>
-                                                
-                                                <li>
-                                                    <a href="about.php">关于</a>
-                                                </li>
-                                                <li>
-                                                    <a href="contact.php">联系我们</a>
-                                                </li>
-                                                
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="header-right d-flex justify-content-end align-items-center">
-                                <div class="contact-info">
-                                    <div class="icon">
-                                        <img src="assets/img/call.png" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <p>电话:</p>
-                                        <h6>
-                                            <a href="tel:+8613100752288">+86 13100752288 </a>
-                                        </h6>
-                                    </div>
-                                </div>
-                                    <div class="header__hamburger d-lg-none my-auto">
-                                    <div class="sidebar__toggle">
-                                        <i class="far fa-bars"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+        <?php include "./header.html" ?>
 
         <!-- Search Area Start -->
         <div class="search-wrap">
