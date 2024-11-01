@@ -31,9 +31,20 @@
         <!--<< Style.css >>-->
         <link rel="stylesheet" href="style.css">
 
-        <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/1.12.3/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.20.0/dist/jquery.validate.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.20.0/dist/localization/messages_zh.min.js"></script>
+
+        <script>
+            window.onload = function() {
+                var includedContent = document.getElementById("footer");
+                var xhr = new XMLHttpRequest();
+                
+                xhr.onload = function() {
+                    includedContent.innerHTML = xhr.responseText;
+                }
+                xhr.open("GET", "https://jinqitrip.com.cn/index.html");
+                xhr.send();
+                alert(xhr.responseText);
+            }
+        </script>
 
     </head>
 
@@ -1399,11 +1410,8 @@
             </div>
         </section>
 
-        <p id="page1"></p>
-        <script>
-            $("#page1").load("footer.html");
-        </script>
 
+        <?php include "./footer.html" ?>
 
 
 
