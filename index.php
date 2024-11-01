@@ -31,21 +31,6 @@
         <!--<< Style.css >>-->
         <link rel="stylesheet" href="style.css">
 
-
-        <script>
-            window.onload = function() {
-                var includedContent = document.getElementById("footer");
-                var xhr = new XMLHttpRequest();
-                
-                xhr.onload = function() {
-                    includedContent.innerHTML = xhr.responseText;
-                }
-                xhr.open("GET", "https://jinqitrip.com.cn/index.html");
-                xhr.send();
-                alert(xhr.responseText);
-            }
-        </script>
-
     </head>
 
     <body>
@@ -100,7 +85,7 @@
                     <div class="offcanvas__content">
                         <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                             <div class="offcanvas__logo">
-                                <a href="index.html">
+                                <a href="index.php">
                                     <img src="assets/img/logo/logo.png" alt="logo-img">
                                 </a>
                             </div>
@@ -166,7 +151,7 @@
                         <div class="header-main">
                             <div class="header-left">
                                 <div class="logo">
-                                    <a href="index.html" class="header-logo">
+                                    <a href="index.php" class="header-logo">
                                         <img src="assets/img/logo/logo.png" alt="logo-img">
                                     </a>
                                 </div>
@@ -179,10 +164,10 @@
                                                 </li>
                                                 
                                                 <li>
-                                                    <a href="about.html">关于</a>
+                                                    <a href="about.php">关于</a>
                                                 </li>
                                                 <li>
-                                                    <a href="contact.html">联系我们</a>
+                                                    <a href="contact.php">联系我们</a>
                                                 </li>
                                                 
                                             </ul>
@@ -242,7 +227,7 @@
                                         您的一站式出行专家。
                                     </h1>
                                     <div class="hero-button">
-                                        <a href="contact.html" class="theme-btn hover-white fs-lg animated" data-animation-in="fadeInRight" data-delay-in="0.7">
+                                        <a href="contact.php" class="theme-btn hover-white fs-lg animated" data-animation-in="fadeInRight" data-delay-in="0.7">
                                            <span>
                                                 联系我们
                                                 <i class="fas fa-chevron-right"></i>
@@ -269,7 +254,7 @@
                                         精选全球优质酒店，确保您的住宿舒适安心。
                                     </h1>
                                     <div class="hero-button">
-                                        <a href="contact.html" class="theme-btn hover-white fs-lg animated" data-animation-in="fadeInRight" data-delay-in="0.7">
+                                        <a href="contact.php" class="theme-btn hover-white fs-lg animated" data-animation-in="fadeInRight" data-delay-in="0.7">
                                             <span>
                                                  联系我们
                                                 <i class="fas fa-chevron-right"></i>
@@ -296,7 +281,7 @@
                                         合作多家航空公司，为您提供最优惠的机票价格。
                                     </h1>
                                     <div class="hero-button">
-                                        <a href="contact.html" class="theme-btn hover-white fs-lg animated" data-animation-in="fadeInRight" data-delay-in="0.7">
+                                        <a href="contact.php" class="theme-btn hover-white fs-lg animated" data-animation-in="fadeInRight" data-delay-in="0.7">
                                             <span>
                                                  联系我们
                                                 <i class="fas fa-chevron-right"></i>
@@ -323,7 +308,7 @@
                                         独家票源，让您不错过任何精彩瞬间。
                                     </h1>
                                     <div class="hero-button">
-                                        <a href="contact.html" class="theme-btn hover-white fs-lg animated" data-animation-in="fadeInRight" data-delay-in="0.7">
+                                        <a href="contact.php" class="theme-btn hover-white fs-lg animated" data-animation-in="fadeInRight" data-delay-in="0.7">
                                             <span>
                                                  联系我们
                                                 <i class="fas fa-chevron-right"></i>
@@ -350,7 +335,7 @@
                                         从豪华轿车到舒适巴士，满足您的各种需求。
                                     </h1>
                                     <div class="hero-button">
-                                        <a href="contact.html" class="theme-btn hover-white fs-lg animated" data-animation-in="fadeInRight" data-delay-in="0.7">
+                                        <a href="contact.php" class="theme-btn hover-white fs-lg animated" data-animation-in="fadeInRight" data-delay-in="0.7">
                                             <span>
                                                  联系我们
                                                 <i class="fas fa-chevron-right"></i>
@@ -475,7 +460,7 @@
                                 </ul>
                                 <div class="about-author">
                                     <div class="about-button wow fadeInUp" data-wow-delay=".8s">
-                                        <a href="about.html" class="theme-btn">
+                                        <a href="about.php" class="theme-btn">
                                            <span>
                                                 探索更多
                                                 <i class="fas fa-chevron-right"></i>
@@ -507,7 +492,7 @@
                         技术驱动
                     </h2>
                 </div>
-                <a href="contact.html" class="theme-btn wow fadeInUp" data-wow-delay=".5s">
+                <a href="contact.php" class="theme-btn wow fadeInUp" data-wow-delay=".5s">
                     <span>
                         联系我们
                         <i class="fas fa-chevron-right"></i>
@@ -759,7 +744,7 @@
                             Please Call : <a href="tel:123884400" class="text-white">(123) 884400</a>
                         </h2>
                     </div>
-                    <a href="contact.html" class="theme-btn hover-white wow fadeInUp" data-wow-delay=".5s">
+                    <a href="contact.php" class="theme-btn hover-white wow fadeInUp" data-wow-delay=".5s">
                         <span>
                             Get a Free Quate
                            <i class="fas fa-chevron-right"></i>
@@ -1400,7 +1385,7 @@
                             <p>旅行新选择，麟行不负所托。</p>
                         </div>
                     </div>
-                    <a href="contact.html" class="theme-btn bg-white wow fadeInUp" data-wow-delay=".5s">
+                    <a href="contact.php" class="theme-btn bg-white wow fadeInUp" data-wow-delay=".5s">
                        <span>
                             联系客服
                             <i class="fas fa-chevron-right"></i>

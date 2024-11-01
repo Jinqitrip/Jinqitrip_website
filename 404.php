@@ -84,7 +84,7 @@
                     <div class="offcanvas__content">
                         <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                             <div class="offcanvas__logo">
-                                <a href="index.html">
+                                <a href="index.php">
                                     <img src="assets/img/logo/logo.png" alt="logo-img">
                                 </a>
                             </div>
@@ -149,7 +149,7 @@
                         <div class="header-main">
                             <div class="header-left">
                                 <div class="logo">
-                                    <a href="index.html" class="header-logo">
+                                    <a href="index.php" class="header-logo">
                                         <img src="assets/img/logo/logo.png" alt="logo-img">
                                     </a>
                                 </div>
@@ -162,10 +162,10 @@
                                                 </li>
                                                 
                                                 <li>
-                                                    <a href="about.html">关于</a>
+                                                    <a href="about.php">关于</a>
                                                 </li>
                                                 <li>
-                                                    <a href="contact.html">联系我们</a>
+                                                    <a href="contact.php">联系我们</a>
                                                 </li>
                                             </ul>
                                         </nav>
@@ -203,7 +203,7 @@
                     <h1 class="wow fadeInUp" data-wow-delay=".3s">404</h1>
                     <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                         <li>
-                            <a href="index.html">
+                            <a href="index.php">
                             主页
                             </a>
                         </li>
@@ -227,7 +227,7 @@
                             <div class="error-image wow fadeInUp" data-wow-delay=".3s">
                                 <img src="assets/img/error.png" alt="img">
                             </div>
-                            <a href="index.html" class="theme-btn wow fadeInUp" data-wow-delay=".5s">
+                            <a href="index.php" class="theme-btn wow fadeInUp" data-wow-delay=".5s">
                                 <span>回到首页<i class="fas fa-chevron-right"></i></span>
                             </a>
                         </div>
