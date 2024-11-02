@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cmn-Hans">
     <!--<< Header Area >>-->
     <head>
+
+        <link rel="icon" href="/assets/img/logo/logo_sqr.png"/>
+        
         <!-- ========== Meta Tags ========== -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -84,7 +87,7 @@
                     <div class="offcanvas__content">
                         <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                             <div class="offcanvas__logo">
-                                <a href="index.html">
+                                <a href="index.php">
                                     <img src="assets/img/logo/logo.png" alt="logo-img">
                                 </a>
                             </div>
@@ -141,60 +144,7 @@
 
         
 
-        <!-- Header Area Start -->
-        <header class="header-section-1">
-            <div id="header-sticky" class="header-1">
-                <div class="container-fluid">
-                    <div class="mega-menu-wrapper">
-                        <div class="header-main">
-                            <div class="header-left">
-                                <div class="logo">
-                                    <a href="index.html" class="header-logo">
-                                        <img src="assets/img/logo/logo.png" alt="logo-img">
-                                    </a>
-                                </div>
-                                <div class="mean__menu-wrapper">
-                                    <div class="main-menu">
-                                        <nav id="mobile-menu">
-                                            <ul>
-                                                <li>
-                                                    <a href="http://post.jinqitrip.com.cn">文章一览</a>
-                                                </li>
-                                                
-                                                <li>
-                                                    <a href="about.html">关于</a>
-                                                </li>
-                                                <li>
-                                                    <a href="contact.html">联系我们</a>
-                                                </li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="header-right d-flex justify-content-end align-items-center">
-                                <div class="contact-info">
-                                    <div class="icon">
-                                        <img src="assets/img/call.png" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <p>电话:</p>
-                                        <h6>
-                                            <a href="tel:+8613100752288">+86 13100752288 </a>
-                                        </h6>
-                                    </div>
-                                </div>
-                                    <div class="header__hamburger d-lg-none my-auto">
-                                    <div class="sidebar__toggle">
-                                        <i class="far fa-bars"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+<?php include "./header.html" ?>
 
         <!--<< Breadcrumb Section Start >>-->
         <div class="breadcrumb-wrapper section-padding bg-cover" style="background-image: url('assets/img/breadcrumb.jpg');">
@@ -203,7 +153,7 @@
                     <h1 class="wow fadeInUp" data-wow-delay=".3s">关于</h1>
                     <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                         <li>
-                            <a href="index.html">
+                            <a href="index.php">
                             主页
                             </a>
                         </li>
@@ -533,7 +483,7 @@
                                 <p class="mt-4 mt-md-0 text-white wow fadeInUp" data-wow-delay=".5s">
                                     您的一站式出行专家。
                                 </p>
-                                <a href="contact.html" class="theme-btn bg-white mt-4 wow fadeInUp" data-wow-delay=".7s">
+                                <a href="contact.php" class="theme-btn bg-white mt-4 wow fadeInUp" data-wow-delay=".7s">
                                     <span>
                                         联系我们
                                         <i class="fas fa-chevron-right"></i>
@@ -1014,195 +964,7 @@
             </div>
         </section>-->
         
-        <!--<< Footer Section Start >>-->
-        <footer class="footer-section footer-bg  pb-0">
-
-            
-            <div class="container">
-                
-                
-
-                <!--
-                <div class="row justify-content-center">
-                    <div class="col-lg-7">
-                        <div class="newsletter-area">
-                            <div class="shape-1">
-                                <img src="assets/img/footer-shape.png" alt="shape-img">
-                            </div>
-                            <div class="shape-2">
-                                <img src="assets/img/footer-shape-2.png" alt="shape-img">
-                            </div>
-                            <div class="newsletter-title">
-                                <h2 class="wow fadeInUp" data-wow-delay=".3s">Join Our Newsletter</h2>
-                                <p class="wow fadeInUp" data-wow-delay=".5s">We Provide Best Pricing package to grow your lead capture</p>
-                            </div>
-                            <div class="newsletter-items">
-                                <div class="form-clt wow fadeInUp" data-wow-delay=".3s">
-                                    <input type="text" name="email" id="email2" placeholder="Email Address">
-                                </div>
-                                <button class="theme-btn hover-white wow fadeInUp" data-wow-delay=".5s" type="submit">
-                                    <span>Subscribe <i class="far fa-arrow-right"></i></span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
-                <div class="footer-widgets-wrapper">
-                    <div class="row">
-                        <div class="col-xl-3 col-sm-6 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".2s">
-                            <div class="single-footer-widget">
-                                <div class="widget-head">
-                                    <a href="index.html">
-                                    <img src="assets/img/logo/footer-logo.png" alt="logo-img">
-                                    </a>
-                                </div>
-                                <div class="footer-content">
-                                    <p>
-                                        锦麒携手，共赴精彩。
-                                    </p>
-                                    <span>想要加入我们？</span> <br>
-                                    <div class="support-text">
-                                        <h5><a href="tel:+8613100752288" style="color: #166FD3;">+86 13100752288 </a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--
-                        <div class="col-xl-2 ps-lg-5 col-sm-6 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay=".4s">
-                            <div class="single-footer-widget">
-                                <div class="widget-head">
-                                    <h5>Quick Links</h5>
-                                </div>
-                                <ul class="list-items">
-                                    <li>
-                                        <a href="service-details.html"> 
-                                            Services
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="about.html">
-                                            About company
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="news-details.html">
-                                            latest news
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="team.html">
-                                            team member
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="testimonial.html">
-                                            testimonials
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 ps-lg-4 col-sm-6 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay=".6s">
-                            <div class="single-footer-widget">
-                                <div class="widget-head">
-                                    <h5>My account</h5>
-                                </div>
-                                <ul class="list-items">
-                                    <li>
-                                        <a href="contact.html">
-                                            Forum Support
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="faq.html">
-                                            Help & FAQ
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">
-                                            Contact Us
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="pricing.html">
-                                            Pricing and plans
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">
-                                            Cookies Policy
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>-->
-                        <div class="col-xl-2 col-sm-6 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".8s">
-                            <div class="single-footer-widget">
-                                <div class="widget-head">
-                                    <h5>地址</h5>
-                                </div>
-                                <div class="footer-address-text">
-                                    <p>
-                                        上海市闵行区苏召路1628号
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 ps-lg-4 col-sm-6 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay=".6s">
-                            <div class="single-footer-widget">
-                                <div class="widget-head">
-                                    <h5>工作时间:</h5>
-                                </div>
-                                <div class="footer-address-text">
-                                    
-                                    <p>
-                                        7/24小时为您服务
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 ps-xl-5 col-sm-6 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".9s">
-                            <div class="single-footer-widget">
-                                <div class="widget-head">
-                                    <h5>联系我们</h5>
-                                </div>
-                                <div class="footer-apps-items">
-                                    
-                                    <div class="support-text">
-                                        <h3><a href="tel:+8613100752288">+86 13100752288 </a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="footer-wrapper d-flex align-items-center justify-content-between">
-                        <p class="wow fadeInLeft color-2" data-wow-delay=".3s">
-                            <a href="https://beian.miit.gov.cn/" target="_blank">沪ICP备2024085336号 </a> 
-                            Copyright © 2024 by fQwQf. All Rights Reserved.
-                         </p>
-                        <ul class="footer-menu wow fadeInRight" data-wow-delay=".5s">
-                            <li>
-                                <a href="about.html">
-                                    关于
-                                </a>
-                            </li>
-                            <li>
-                                <a href="contact.html">
-                                    联系
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <a href="#" id="scrollUp" class="scroll-icon">
-                    <i class="far fa-arrow-up"></i>
-                </a>
-            </div>
-        </footer>
+        <?php include "./footer.html" ?>
 
          <!--<< All JS Plugins >>-->
          <script src="assets/js/jquery-3.7.1.min.js"></script>
