@@ -1115,15 +1115,13 @@
                 <div class="testimonial-carousel-active">
                     <div class="testimonial-card-items">
                         <div class="author-items">
-                            <div class="author-image bg-cover" style="background-image: url('assets/img/testimonial/01.png');"></div>
                             <div class="author-content">
-                                <h5>Leslie Alexander</h5>
+                                <h5>潘*欣</h5>
                                 <span>演唱会爱好者</span>
                             </div>
                         </div>
                         <p>
-                            在锦麒，每一次出行都是一次全新的探索。他们不仅提供了高效的预定服务，还确
-                            保了旅途中的每一个细节都完美无瑕。从机票到酒店，再到演唱会的优先票务，锦麒都能提供超乎期待的服务
+                            酒店优惠折扣很大，没有遇到问题，服务很好。机票和保险都是提前订好的，没怎么操心。
                         </p>
                         <ul>
                             <li>2024/3/26</li>
@@ -1131,15 +1129,13 @@
                     </div>
                     <div class="testimonial-card-items">
                         <div class="author-items">
-                            <div class="author-image bg-cover" style="background-image: url('assets/img/testimonial/02.png');"></div>
                             <div class="author-content">
-                                <h5>Salman Ahmed</h5>
+                                <h5>刘*然</h5>
                                 <span>游客</span>
                             </div>
                         </div>
                         <p>
-                            锦麒的客户服务团队真的很出色。无论我何时需要帮助，他们总是能够迅速响应并提
-                            供解决方案。他们的微信公众号更是一个巨大的加分点，让信息获取和服务预定变得前所未有的简单。
+                        非常满意！服务的速度和质量都很好，酒店真的离个个商区都很近，并且物美价廉。特别喜欢把客户当朋友的态度，对我们的态度既亲切同时也不失专业和礼数。非常完美，留给了我们自主选择的权利，同时帮我们解决了出行住宿等一系列问题
                         </p>
                         <ul>
                             <li>2023/5/15</li>
@@ -1147,31 +1143,14 @@
                     </div>
                     <div class="testimonial-card-items">
                         <div class="author-items">
-                            <div class="author-image bg-cover" style="background-image: url('assets/img/testimonial/03.png');"></div>
+                            <!--<div class="author-image bg-cover" style="background-image: url('assets/img/testimonial/03.png');"></div>-->
                             <div class="author-content">
-                                <h5>Jhon Dev</h5>
+                                <h5>裴*豪</h5>
                                 <span>商务人士</span>
                             </div>
                         </div>
                         <p>
-                            选择锦麒，就是选择了无忧的旅行体验。他们的专业管家服务让我每次出差都能享
-                            受到尊贵而舒适的待遇，而且他们的积分预定系统让我能够充分利用每一分积分。
-                        </p>
-                        <ul>
-                            <li>2024/1/23</li>
-                        </ul>
-                    </div>
-                    <div class="testimonial-card-items">
-                        <div class="author-items">
-                            <div class="author-image bg-cover" style="background-image: url('assets/img/testimonial/01.png');"></div>
-                            <div class="author-content">
-                                <h5>Shikon Bro</h5>
-                                <span>游客</span>
-                            </div>
-                        </div>
-                        <p>
-                            锦麒行旅游信息咨询有限公司真正做到了将客户放在第一位。他们的个性化服务和对细节的关注让我每次
-                            旅行都感到特别。他们的技术创新，如自动搜集机票积分兑换信息，显著提高了预定的便捷性和效率。
+                            还算满意，预订住宿，车票都很好；希望可以提供异性朋友同行！！（doge）
                         </p>
                         <ul>
                             <li>2024/1/23</li>
