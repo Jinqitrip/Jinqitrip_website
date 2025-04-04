@@ -1,0 +1,88 @@
+/* docs/.vitepress/theme/style.css */
+
+/* 1. VitePress Theme Variable Overrides (Example) */
+:root {
+    --vp-c-brand-1: #166FD3; /* Your primary color */
+    --vp-c-brand-2: #1a7ee6;
+    --vp-c-brand-3: #0f5eb3;
+    --vp-c-brand-dark: #0f5eb3;
+    --vp-c-brand-darker: #0c4a8f;
+    --vp-c-brand-light: #1a7ee6;
+    --vp-c-brand-lighter: #2e8dff;
+  
+    --vp-c-bg-soft: #f8f8f8; /* Used in some components */
+  }
+  
+  /* 2. Styles for Custom Vue Components */
+  
+  /* Example: Hero Slider Nav/Pagination */
+  .hero-slider-active .swiper-button-prev,
+  .hero-slider-active .swiper-button-next {
+      color: #ffffff;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      transition: background-color 0.3s ease;
+  }
+  .hero-slider-active .swiper-button-prev:hover,
+  .hero-slider-active .swiper-button-next:hover {
+      background-color: rgba(0, 0, 0, 0.6);
+  }
+  .hero-slider-active .swiper-button-prev::after,
+  .hero-slider-active .swiper-button-next::after {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .hero-slider-active .swiper-pagination-bullet {
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 1;
+    transition: background-color 0.3s ease;
+  }
+  .hero-slider-active .swiper-pagination-bullet-active {
+    background-color: var(--vp-c-brand-1);
+  }
+  
+  /* Example: Testimonial/Service Carousel Pagination */
+  .testimonial-carousel-active .swiper-pagination,
+  .service-carousel-active .swiper-pagination {
+      position: static;
+      margin-top: 30px;
+  }
+  .testimonial-carousel-active .swiper-pagination-bullet,
+  .service-carousel-active .swiper-pagination-bullet {
+      background-color: rgba(0, 0, 0, 0.2);
+      opacity: 1;
+  }
+  .testimonial-carousel-active .swiper-pagination-bullet-active,
+  .service-carousel-active .swiper-pagination-bullet-active {
+      background-color: var(--vp-c-brand-1);
+  }
+  
+  /* Example: Tab Active State */
+  .nav-link.active {
+    color: var(--vp-c-brand-1);
+    border-bottom: 2px solid var(--vp-c-brand-1);
+  }
+  .tab-pane { display: none; }
+  .tab-pane.active { display: block; }
+  
+  
+  /* 3. Additional Global Overrides (if needed) */
+  
+  /* Example: Ensure containers have padding if needed */
+  /* .container { padding-left: 15px; padding-right: 15px; } */
+  
+  /* Example: Ensure basic utility classes exist if not covered by linked CSS */
+  .text-center { text-align: center; }
+  .bg-cover {
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  .section-padding {
+      padding-top: 80px; /* Adjust */
+      padding-bottom: 80px; /* Adjust */
+  }
+  .pt-0 { padding-top: 0 !important; }
+  .pb-0 { padding-bottom: 0 !important; }
