@@ -1,0 +1,30 @@
+{
+  "name": "jinqitrip_website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jinqitrip/Jinqitrip_website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jinqitrip/Jinqitrip_website/issues"
+  },
+  "homepage": "https://github.com/Jinqitrip/Jinqitrip_website#readme",
+  "description": "",
+  "devDependencies": {
+    "vitepress": "^1.6.3",
+    "vue": "^3.5.13"
+  },
+  "dependencies": {
+    "jinqitrip_website": "file:"
+  }
+}
