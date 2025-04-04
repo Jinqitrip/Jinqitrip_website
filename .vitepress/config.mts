@@ -2,8 +2,12 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  lang: 'zh-cmn-Hans',
   title: "锦麒行旅游",
   description: "锦麒行旅游官方网站",
+  head: [
+    ['link', { rel: 'icon', href: '/assets/img/logo/logo_sqr.png' }]
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
