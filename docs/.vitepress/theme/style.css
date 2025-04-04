@@ -86,3 +86,115 @@
   }
   .pt-0 { padding-top: 0 !important; }
   .pb-0 { padding-bottom: 0 !important; }
+
+/* === Blog Post Specific Styles === */
+
+.VPDoc main h1 {
+  /* Original was 2.2rem */
+  font-size: 1.9rem; /* ADJUSTED: Smaller H1 size */
+  margin-bottom: 1rem;
+  line-height: 1.3;
+  border-bottom: 1px solid var(--vp-c-divider); /* Optional: add subtle separator */
+  padding-bottom: 0.5rem; /* Optional: spacing for separator */
+}
+
+/* Style the first paragraph (meta) after the adjusted H1 */
+.VPDoc main h1 + p {
+  font-size: 0.85em; /* ADJUSTED: Slightly smaller meta */
+  color: var(--vp-c-text-2);
+  margin-top: 0.5rem; /* ADJUSTED: Less negative margin */
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+/* Target the main content area within the default layout */
+.VPDoc main {
+  /* Optional: Add max-width for readability on very wide screens */
+  /* max-width: 800px; */
+  /* margin: 0 auto; */
+}
+
+.VPDoc main p,
+.VPDoc main ul,
+.VPDoc main ol {
+  line-height: 1.8; /* Improve readability */
+  font-size: 1rem; /* Ensure consistent font size */
+  margin-bottom: 1.25rem;
+}
+
+.VPDoc main ul,
+.VPDoc main ol {
+  padding-left: 1.5rem; /* Standard list indentation */
+}
+
+.VPDoc main li {
+  margin-bottom: 0.5rem;
+}
+
+.VPDoc main strong {
+  font-weight: 600; /* Ensure strong is bold enough */
+}
+
+.VPDoc main em {
+  /* Style italics if needed */
+}
+
+.VPDoc main blockquote {
+  border-left: 3px solid var(--vp-c-brand-1);
+  padding-left: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 1.25rem;
+  color: var(--vp-c-text-2);
+  font-style: italic;
+}
+
+/* Improve image styling within posts */
+.VPDoc main img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1.5rem; /* Added more top margin */
+  margin-bottom: 1.5rem;
+  display: block; /* Crucial for margin auto to work */
+  margin-left: auto; /* Center horizontally */
+  margin-right: auto; /* Center horizontally */
+}
+
+/* ADD THIS: Attempt to center if image is wrapped in a paragraph */
+.VPDoc main p > img {
+    /* This specifically targets images that are direct children of paragraphs */
+    /* No extra styles needed here usually, the styles on 'img' itself should work */
+    /* But we ensure the paragraph itself doesn't interfere */
+}
+.VPDoc main p:has(> img) {
+    /* Target paragraphs that contain an image as a direct child */
+    text-align: center; /* Center the paragraph's content */
+    /* Reset paragraph margins if they interfere with image margins */
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+/* Note: :has() has good browser support but check if you need older browser compatibility */
+
+
+/* Horizontal Rule styling */
+.VPDoc main hr {
+  border: 0;
+  height: 1px;
+  background-color: var(--vp-c-divider);
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Links within post content */
+.VPDoc main a {
+    color: var(--vp-c-brand-1);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    font-weight: 500;
+}
+.VPDoc main a:hover {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    color: var(--vp-c-brand-dark);
+}

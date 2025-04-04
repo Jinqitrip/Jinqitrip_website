@@ -30,7 +30,7 @@ export default defineConfig({
 
     // Navigation Links (from header.html)
     nav: [
-      { text: '文章一览', link: 'http://post.jinqitrip.com.cn' }, // External link
+      { text: '文章一览', link: '/posts' }, // External link
       { text: '关于', link: '/about' },
       { text: '联系我们', link: '/contact' },
     ],
@@ -41,7 +41,7 @@ export default defineConfig({
     // Footer configuration (based on footer.html)
     footer: {
       // message: 'Released under the MIT License.', // Optional
-      copyright: `沪ICP备2024085336号 | Copyright © 2024 by fQwQf. All Rights Reserved.`
+      copyright: `沪ICP备2024085336号 | Copyright © 2024-2025 by fQwQf. All Rights Reserved.`
     },
 
     // Add other themeConfig options if needed (e.g., social links, edit links)

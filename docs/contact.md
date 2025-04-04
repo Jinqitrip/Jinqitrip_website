@@ -1,12 +1,12 @@
 ---
-title: 联系我们 - 锦麒行旅游
+title: 联系我们
 description: 通过电话、邮件或企业微信联系锦麒行旅游，获取专业的旅行咨询服务。
 layout: page
 editLink: false
 ---
 
 <!-- Breadcrumb component or omit -->
-<!-- <Breadcrumb title="联系我们" :items="[{ text: '主页', link: '/' }, { text: '联系我们' }]" /> -->
+<Breadcrumb title="联系我们" :items="[{ text: '主页', link: '/' }, { text: '联系我们' }]" />
 
 <section class="contact-main-area fix section-padding">
     <div class="container">

@@ -1,54 +1,15 @@
 ---
-title: 关于 - 锦麒行旅游
+title: 关于
 description: 了解锦麒行旅游的公司概述、目标市场、竞争优势和服务性质。
 layout: page
 editLink: false
 ---
 
 <!-- Breadcrumb component or omit -->
-<!-- <Breadcrumb title="关于" :items="[{ text: '主页', link: '/' }, { text: '关于' }]" /> -->
+<Breadcrumb title="关于" :items="[{ text: '主页', link: '/' }, { text: '关于' }]" /> 
 
 <!-- About Section -->
-<section class="about-section fix section-padding">
-    <div class="container">
-        <div class="about-wrapper">
-            <div class="row">
-                <div class="col-lg-6">
-                   <div class="about-image-items">
-                       <div class="border-shape">
-                           <img src="/assets/img/about/border-shape.png" alt="shape-img">
-                       </div>
-                       <div class="about-image bg-cover" style="background-image: url('/assets/img/about/about.jpg');">
-                           <div class="about-image-2">
-                               <img src="/assets/img/about/about-2.jpg" alt="about-img">
-                           </div>
-                       </div>
-                   </div>
-                </div>
-                <div class="col-lg-6 mt-5 mt-lg-0">
-                    <div class="about-content">
-                        <div class="section-title">
-                            <span>麒行，引领您的旅程。</span>
-                            <h2>公司概述</h2>
-                        </div>
-                        <p class=" mt-4 mt-md-0">
-                            锦麒行旅游信息咨询有限公司致力于为商务旅客和高端休闲旅客提供一站式出行服务，涵盖酒店代订、机票预定、演唱会票务预定及车辆安排。通过特色管家服务、会员代订、积分预定和独家内部票等多种方式，确保客户享受最优质、最便捷的服务。
-                        </p>
-                        <br><br><br>
-
-                        <h2>目标市场</h2>
-                        <ul class="about-list">
-                            <li><i class="far fa-check me-2"></i>学生及其亲戚朋友：需要高效、便捷的出行服务。</li>
-                            <li><i class="far fa-check me-2"></i>商务旅客：需要高效、便捷的出行安排。</li>
-                            <li><i class="far fa-check me-2"></i>高端休闲旅客：追求高质量的旅行体验。</li>
-                            <li><i class="far fa-check me-2"></i>演唱会爱好者：希望获得优质票务服务。</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<AboutSection />
 
 <!-- Competitive Advantage Section (using Service Carousel component) -->
 <ServiceCarousel class="section-bg" title="竞争优势" tagline="麒行天下，尽在咫尺。" :useNumericTitles="true" :items="competitiveAdvantages" />
