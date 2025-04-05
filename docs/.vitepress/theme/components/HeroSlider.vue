@@ -61,8 +61,8 @@
     { img: '/assets/img/hero/hero-1.jpg', tagline: '欢迎来到锦麒行旅游', titleLine1: '锦麒行旅游信息咨询有限公司——', titleLine2: '您的一站式出行专家。', showFrame: true },
     { img: '/assets/img/hero/hero-2.jpg', tagline: '酒店代订', titleLine1: '精选全球优质酒店，确保您的住宿舒适安心。', showFrame: true },
     { img: '/assets/img/hero/hero-3.jpg', tagline: '机票预定', titleLine1: '合作多家航空公司，为您提供最优惠的机票价格。', showFrame: true },
-    { img: '/assets/img/hero/hero-1.jpg', tagline: '演唱会票务', titleLine1: '独家票源，让您不错过任何精彩瞬间。', showFrame: true },
-    { img: '/assets/img/hero/hero-3.jpg', tagline: '车辆安排', titleLine1: '从豪华轿车到舒适巴士，满足您的各种需求。', showFrame: true },
+    { img: '/assets/img/hero/hero-4.jpg', tagline: '演唱会票务', titleLine1: '独家票源，让您不错过任何精彩瞬间。', showFrame: true },
+    { img: '/assets/img/hero/hero-5.jpg', tagline: '车辆安排', titleLine1: '从豪华轿车到舒适巴士，满足您的各种需求。', showFrame: true },
   ]);
   </script>
   

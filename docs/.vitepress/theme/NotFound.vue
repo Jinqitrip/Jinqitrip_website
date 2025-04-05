@@ -13,12 +13,6 @@
                 <h2 style="margin-bottom: 1rem; font-weight: 600; font-size: 2rem;">页面飞走了...</h2>
                 <p style="margin-bottom: 1.5rem; color: var(--vp-c-text-2);">抱歉，我们找不到您要访问的页面。</p>
   
-                <!-- Error Image -->
-                <div class="error-image" style="margin: 20px 0 30px;">
-                  <!-- Ensure the image path is correct relative to the public folder -->
-                  <img src="/assets/img/error.png" alt="404 Not Found" style="max-width: 100%; height: auto;">
-                </div>
-  
                 <!-- Back to Home Button -->
                 <a href="/" class="theme-btn"> <!-- Use VitePress base path helper if needed -->
                 <!-- <a :href="withBase('/')" class="theme-btn"> -->

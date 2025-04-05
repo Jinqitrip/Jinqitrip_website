@@ -71,7 +71,7 @@ editLink: false # Disable edit link for this page
 <TrustedClientSection />
 
 <!-- Brand Section -->
-<BrandCarousel title="相关合作伙伴" />
+<!--<BrandCarousel title="相关合作伙伴" />-->
 
 <!-- Case Studies Section -->
 <CaseStudies />

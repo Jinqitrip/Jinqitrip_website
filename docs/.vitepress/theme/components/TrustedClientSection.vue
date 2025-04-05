@@ -5,12 +5,6 @@
           <div class="row align-items-center">
             <div class="col-xl-5">
               <div class="trusted-client-image bg-cover" style="background-image: url('/assets/img/feature/trusted.jpg');">
-                <div class="icon-box">
-                  <img src="/assets/img/circle.png" alt="img" class="text-circle">
-                  <div class="icon">
-                    <img src="/assets/img/icon.png" alt="icon-img">
-                  </div>
-                </div>
                 <div class="counter-main-area">
                   <div class="counter-area">
                     <div class="counter-items">
