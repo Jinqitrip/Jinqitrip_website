@@ -49,14 +49,30 @@ export default defineConfig({
     // Example: Could add to footer message or create custom layout slot
 
     // Social Links (example - add if you have them)
-    // socialLinks: [
-    //   { icon: 'github', link: 'https://github.com/...' }
-    // ],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/Jinqitrip' }
+    ],
 
     // Search (Optional, enable if desired)
-    // search: {
+    //search: {
     //   provider: 'local'
-    // }
+    //}
+
+    // 覆盖侧边栏 "On this page" 标题
+    outlineTitle: '本页目录',
+
+    // 覆盖404页面提示文本
+    notFound: {
+      title: '页面未找到',
+      quote: '也许你输入了一个错误的链接，或者内容已被移动。',
+      linkLabel: '返回首页',
+      linkText: '返回主页'
+    },
+
+    // 其他中文覆盖项（可选）
+    darkModeSwitchLabel: '切换主题', // 深色模式切换按钮文字
+    sidebarMenuLabel: '菜单',        // 移动端侧边栏菜单按钮文字
+    returnToTopLabel: '返回顶部'     // 返回顶部按钮文字
   },
 
   // Custom 404 page handling (VitePress looks for .vitepress/theme/NotFound.vue)
