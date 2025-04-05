@@ -30,7 +30,8 @@ export default defineConfig({
 
     // Navigation Links (from header.html)
     nav: [
-      { text: '文章一览', link: '/posts' }, // External link
+      { text: '校园引路人', link: '/unimentor' },
+      { text: '文章一览', link: '/posts' }, 
       { text: '关于', link: '/about' },
       { text: '联系我们', link: '/contact' },
     ],
