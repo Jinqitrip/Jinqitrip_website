@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "jinqitrip_website": "file:",
+    "rollup": "^4.39.0",
     "swiper": "^11.2.6"
   }
 }
