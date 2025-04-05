@@ -12,8 +12,6 @@ editLink: false
 
 *发布日期: 2024年7月28日* | *作者: {{ $frontmatter.author }}*
 
-![大理洱海风光](/assets/img/project/01.jpg) <!-- Example Image - Replace with relevant one -->
-
 国庆假期，对于许多家庭来说是难得的共度时光。这次，我们为来自上海的一家三口策划了一场深入云南的定制之旅，旨在让他们在繁忙的节日里，也能舒适地体验彩云之南的自然风光和浓郁的民族文化。
 
 ## 客户需求
