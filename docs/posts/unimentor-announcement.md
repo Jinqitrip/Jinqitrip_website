@@ -10,7 +10,7 @@ editLink: false
 
 # 锦麒行 "校园引路人计划" 内容资讯发布公告
 
-*发布日期: 2025年4月7日* | *作者: {{ $frontmatter.author }}*
+*发布日期: {{ $frontmatter.date }}** | *作者: {{ $frontmatter.author }}*
 
 [获取pdf](/pdf/锦麒行“校园引路人计划”内容资讯发布公告.pdf)
 
