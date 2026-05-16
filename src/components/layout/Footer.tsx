@@ -7,7 +7,7 @@ import styles from './Footer.module.css';
 
 interface FooterProps {
   locale: string;
-  footer: { copyright: string; icp: string };
+  footer: { copyright: string; github: string };
 }
 
 export default function Footer({ locale, footer }: FooterProps) {
@@ -19,12 +19,12 @@ export default function Footer({ locale, footer }: FooterProps) {
           <p className={styles.tagline}>{locale === 'en' ? 'Your One-Stop Travel Expert' : '您的一站式出行专家'}</p>
         </div>
         <div className={styles.bottom}>
-          <span>{footer.icp}</span>
-          <span className={styles.sep}>|</span>
-          <span>{footer.copyright}</span>
           <Link href="https://github.com/Jinqitrip" target="_blank" className={styles.github}>
             <GithubOutlined />
+            <span>{footer.github}</span>
           </Link>
+          <span className={styles.sep}>|</span>
+          <span>{footer.copyright}</span>
         </div>
       </div>
     </footer>

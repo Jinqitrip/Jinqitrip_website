@@ -8,13 +8,14 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
-.brand {
-  margin-bottom: 24px;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-  padding-bottom: 24px;
-}
+.brand { }
 
 .brand img { filter: brightness(0) invert(1); opacity: 0.85; }
 
@@ -35,14 +36,17 @@
 .sep { opacity: 0.3; }
 
 .github {
-  margin-left: auto;
-  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   color: rgba(255,255,255,0.5);
   transition: color 0.25s;
+  text-decoration: none;
+  font-size: 13px;
 }
 .github:hover { color: #fff; }
+.github svg { font-size: 15px; }
 
 @media (max-width: 600px) {
-  .bottom { flex-direction: column; align-items: flex-start; gap: 6px; }
-  .github { margin-left: 0; }
+  .inner { align-items: flex-start; flex-direction: column; }
 }

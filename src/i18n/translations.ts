@@ -55,7 +55,7 @@ export interface Translations {
     home: string; posts: string; about: string; contact: string;
   };
   footer: {
-    copyright: string; icp: string;
+    copyright: string; github: string;
   };
   posts: {
     title: string; tagline: string; readMore: string; noPosts: string;
@@ -192,7 +192,7 @@ const zh: Translations = {
     mockCart: '购物车 · 3 道菜', mockCartCta: '生成双语小票 →',
   },
   nav: { home: '首页', posts: '文章一览', about: '关于', contact: '联系我们' },
-  footer: { copyright: 'Copyright © 2024-2025 锦麒行旅游. All Rights Reserved.', icp: '沪ICP备2024085336号' },
+  footer: { copyright: 'Copyright © 2024-2026 锦麒行旅游. All Rights Reserved.', github: '我们的开源项目' },
   posts: { title: '文章一览', tagline: '锦麒，旅行知识的源泉。', readMore: '阅读全文', noPosts: '暂无文章' },
   about_page: { breadcrumbHome: '首页', breadcrumbAbout: '关于我们' },
   contact_page: {
@@ -329,7 +329,7 @@ const en: Translations = {
     mockCart: 'Cart · 3 dishes', mockCartCta: 'Generate Receipt →',
   },
   nav: { home: 'Home', posts: 'Blog', about: 'About', contact: 'Contact' },
-  footer: { copyright: 'Copyright © 2024-2025 Jinqitrip. All Rights Reserved.', icp: '沪ICP备2024085336号' },
+  footer: { copyright: 'Copyright © 2024-2026 Jinqitrip. All Rights Reserved.', github: 'Our Open Source Projects' },
   posts: { title: 'Blog', tagline: 'Jinqitrip — your source of travel knowledge.', readMore: 'Read More', noPosts: 'No posts yet.' },
   about_page: { breadcrumbHome: 'Home', breadcrumbAbout: 'About Us' },
   contact_page: {
