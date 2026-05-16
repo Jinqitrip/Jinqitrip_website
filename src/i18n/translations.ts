@@ -199,7 +199,7 @@ const zh: Translations = {
     breadcrumbHome: '首页', breadcrumbContact: '联系我们',
     address: '地址', addressVal: '上海市',
     phone: '电话', phoneVal: '+86 131-0075-2288',
-    email: '邮箱', emailVal: 'contact@jinqitrip.com',
+    email: '邮箱', emailVal: 'harry@jinqitrip.com',
   },
   unimentor_page: {
     breadcrumbHome: '首页', breadcrumbTitle: '校园引路人',
@@ -336,7 +336,7 @@ const en: Translations = {
     breadcrumbHome: 'Home', breadcrumbContact: 'Contact Us',
     address: 'Address', addressVal: 'Shanghai, China',
     phone: 'Phone', phoneVal: '+86 131-0075-2288',
-    email: 'Email', emailVal: 'contact@jinqitrip.com',
+    email: 'Email', emailVal: 'harry@jinqitrip.com',
   },
   unimentor_page: {
     breadcrumbHome: 'Home', breadcrumbTitle: 'Unimentor',
