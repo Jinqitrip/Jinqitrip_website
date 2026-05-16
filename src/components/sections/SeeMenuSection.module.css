@@ -1,0 +1,302 @@
+/* ── Section wrapper ── */
+.section { }
+
+.wrapper {
+  background: linear-gradient(135deg, #f0f6ff 0%, #ffffff 60%);
+  border-radius: 16px;
+  padding: 60px 48px;
+  border: 1px solid #e3eaf5;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper::before {
+  content: '';
+  position: absolute;
+  top: -60px; right: -60px;
+  width: 240px; height: 240px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(22, 111, 211, 0.07) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ── Phone wrap ── */
+.phoneWrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+/* ── Badge ── */
+.badge {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff;
+  border: 1px solid #d0e2f7;
+  border-radius: 999px;
+  padding: 4px 14px;
+  font-size: 12px;
+  color: #166fd3;
+  font-weight: 500;
+  white-space: nowrap;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(22, 111, 211, 0.1);
+}
+
+.badgeDot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: #166fd3;
+  animation: blink 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* ── Phone body ── */
+.phone {
+  width: 240px;
+  border-radius: 36px;
+  padding: 7px;
+  background: linear-gradient(180deg, #1a2540, #0d1220);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.22),
+    0 4px 12px rgba(0, 0, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  position: relative;
+  z-index: 1;
+}
+
+/* Dynamic island notch */
+.notch {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 76px; height: 20px;
+  background: #000;
+  border-radius: 12px;
+  z-index: 3;
+}
+
+/* ── Screen ── */
+.screen {
+  background: #f8faff;
+  border-radius: 30px;
+  padding: 32px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 440px;
+}
+
+.screenHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 9px;
+  color: #8a9bb8;
+  padding: 0 6px;
+}
+
+.time { font-weight: 700; color: #1a2540; }
+.appName { font-weight: 600; color: #166fd3; }
+.signal { letter-spacing: -1px; font-size: 7px; }
+
+/* ── Menu photo ── */
+.photo {
+  position: relative;
+  height: 148px;
+  border-radius: 12px;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(22, 111, 211, 0.04) 0 6px,
+      transparent 6px 12px
+    ),
+    linear-gradient(135deg, #e8f0fa, #d4e4f7);
+  border: 1px solid #ccd9ef;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.photoLabel {
+  position: absolute;
+  top: 6px; left: 7px;
+  font-size: 8px;
+  color: #8a9bb8;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+/* ── Hot zones ── */
+.hotZone {
+  position: absolute;
+  border: 1px solid rgba(22, 111, 211, 0.35);
+  background: rgba(22, 111, 211, 0.06);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  padding-left: 4px;
+  font-size: 9px;
+  color: #166fd3;
+  font-weight: 700;
+}
+
+.hz1 { top: 20%; left: 10%; width: 40%; height: 14%; }
+.hz2 { top: 42%; left: 15%; width: 52%; height: 13%; }
+.hz3 { top: 63%; left: 20%; width: 36%; height: 11%; }
+
+.hzActive {
+  border-color: #166fd3;
+  background: rgba(22, 111, 211, 0.12);
+  box-shadow: 0 0 0 1px #166fd3;
+}
+
+/* ── Dish card ── */
+.dishCard {
+  background: #fff;
+  border: 1px solid #e0eaf7;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.dishRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.dishEn { font-size: 10px; font-weight: 600; color: #1a2540; line-height: 1.2; }
+.dishCn { font-size: 10px; color: #5a6a8a; margin-top: 2px; }
+.price  { font-size: 12px; font-weight: 700; color: #166fd3; white-space: nowrap; }
+
+.tags { display: flex; gap: 4px; flex-wrap: wrap; }
+
+.tag {
+  font-size: 8px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  background: #f0f4f8;
+  color: #5a6a8a;
+  border: 1px solid #e0eaf7;
+}
+
+.tagOk   { background: rgba(34,197,94,0.1);  color: #15803d; border-color: rgba(34,197,94,0.2); }
+.tagWarn { background: rgba(239,68,68,0.1);   color: #b91c1c; border-color: rgba(239,68,68,0.2); }
+
+/* ── Cart bar ── */
+.cartBar {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #166fd3;
+  color: #fff;
+  border-radius: 9px;
+  padding: 8px 10px;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.cartCta { opacity: 0.85; }
+
+/* ── Deco rings ── */
+.decoRing {
+  position: absolute;
+  border-radius: 50%;
+  border: 1.5px solid rgba(22, 111, 211, 0.12);
+  pointer-events: none;
+}
+
+.ring1 { width: 300px; height: 300px; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.ring2 { width: 380px; height: 380px; top: 50%; left: 50%; transform: translate(-50%, -50%); border-style: dashed; opacity: 0.5; }
+
+/* ── Content side ── */
+.content { }
+
+.content .section-title h2 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: #5a6a8a;
+  letter-spacing: 0;
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+.desc {
+  color: var(--text);
+  line-height: 1.8;
+  margin-top: 16px;
+}
+
+.featList {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.featList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 15px;
+  color: #3a4a6a;
+  line-height: 1.6;
+}
+
+.check {
+  color: #166fd3;
+  font-size: 18px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.stack {
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.stackLabel { font-size: 13px; color: #8a9bb8; }
+
+.stackTag {
+  background: #eef4fc;
+  color: #166fd3;
+  border: 1px solid #c8ddf5;
+  border-radius: 999px;
+  padding: 2px 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@media (max-width: 991px) {
+  .wrapper { padding: 40px 24px; }
+  .ring1, .ring2 { display: none; }
+}

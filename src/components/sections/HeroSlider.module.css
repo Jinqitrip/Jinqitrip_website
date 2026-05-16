@@ -1,0 +1,100 @@
+.hero { position: relative; }
+
+.swiper { width: 100%; height: 100vh; min-height: 600px; }
+
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* 左深右浅：文字区域清晰，右侧保留照片细节 */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    rgba(2, 8, 40, 0.65) 0%,
+    rgba(2, 8, 40, 0.45) 45%,
+    rgba(22, 105, 193, 0.15) 70%,
+    rgba(22, 105, 193, 0.05) 100%
+  );
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 580px;
+  padding-top: 80px;
+}
+
+/* 标签行 */
+.tagline {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gold-light);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: 18px;
+}
+
+.tagline::before {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 2px;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+
+/* 大标题：第一行超大品牌名 */
+.titleBrand {
+  font-size: clamp(72px, 12vw, 140px);
+  font-weight: 900;
+  color: #fff;
+  line-height: 1;
+  margin: 0 0 12px;
+  letter-spacing: -0.02em;
+  font-family: 'Ma Shan Zheng', 'Noto Serif SC', serif;
+  text-shadow: 0 4px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* 副标题行 */
+.titleSub {
+  font-size: clamp(18px, 2.5vw, 28px);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.5;
+  margin: 0 0 6px;
+  font-family: 'Noto Sans SC', sans-serif;
+  letter-spacing: 0.02em;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+.divider {
+  width: 48px;
+  height: 3px;
+  background: var(--gold);
+  border-radius: 2px;
+  margin: 20px 0 28px;
+}
+
+.content .theme-btn { margin-top: 0; }
+
+@media (max-width: 768px) {
+  .swiper { height: 100svh; min-height: 520px; }
+  .content { padding-top: 60px; max-width: 100%; }
+  .overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(2, 8, 40, 0.85) 0%,
+      rgba(2, 8, 40, 0.70) 60%,
+      rgba(22, 105, 193, 0.30) 100%
+    );
+  }
+}

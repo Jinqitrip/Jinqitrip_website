@@ -1,0 +1,47 @@
+.wrap {
+  position: relative;
+  padding: 140px 0 80px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(2, 6, 38, 0.7) 0%, rgba(22, 105, 193, 0.5) 100%);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.title {
+  color: #fff;
+  font-family: 'Noto Serif SC', serif;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+}
+
+.crumbs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.crumbItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.8);
+}
+
+.crumbItem a { color: rgba(255,255,255,0.8); }
+.crumbItem a:hover { color: var(--gold-light); }
+.crumbItem span:not(.sep) { color: #fff; font-weight: 500; }
+
+.sep { font-size: 10px; color: rgba(255,255,255,0.5); }

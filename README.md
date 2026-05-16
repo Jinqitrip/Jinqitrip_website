@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 锦麒行旅游官方网站
 
-## Getting Started
+**Jinqitrip Travel & Consulting — 您的一站式出行专家**
 
-First, run the development server:
+---
+
+## 技术栈
+
+| 用途 | 技术 | 协议 |
+|------|------|------|
+| 框架 | Next.js 16 App Router（静态导出） | MIT |
+| UI 组件 | Ant Design 5 | MIT |
+| 图标 | @ant-design/icons | MIT |
+| 轮播 | Swiper 11 | MIT |
+| 邮件 | EmailJS | — |
+| 字体 | Google Fonts（Ma Shan Zheng, Noto Serif SC, Noto Sans SC） | OFL |
+| 语言 | TypeScript | — |
+
+所有依赖均为 MIT / OFL 协议，可商用。
+
+---
+
+## 功能
+
+- 双语支持（中文 / English）
+- 全响应式设计，适配移动端
+- Hero 轮播（Swiper + Fade 效果）
+- 联系表单（EmailJS 实发邮件 + 自动回复）
+- 博客系统（Markdown + gray-matter）
+- 滚动动画（IntersectionObserver）
+- 纯静态输出，可部署至任意 CDN
+
+---
+
+## 本地开发
 
 ```bash
+# 安装依赖
+npm install
+
+# 配置 EmailJS（复制后填入实际值）
+cp .env.example .env.local
+
+# 启动开发服务器
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+访问 http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## EmailJS 配置
 
-## Learn More
+在 [emailjs.com](https://emailjs.com) 注册后，将以下变量填入 `.env.local`：
 
-To learn more about Next.js, take a look at the following resources:
+```env
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+NEXT_PUBLIC_EMAILJS_TEMPLATE_REPLY_ID=your_autoreply_template_id
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 构建部署
 
-## Deploy on Vercel
+```bash
+# 生成静态文件到 out/ 目录
+npm run build
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# 本地预览静态文件
+npx serve out
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 项目结构
+
+```
+src/
+├── app/[locale]/          # 双语路由页面
+├── components/
+│   ├── layout/            # NavBar、Footer
+│   └── sections/          # 各功能区块组件
+├── i18n/translations.ts   # 中英文翻译
+├── lib/posts.ts           # 博客读取逻辑
+└── styles/                # 全局样式
+content/posts/             # Markdown 博客文章
+public/assets/             # 静态图片资源
+```
+
+---
+
+## 版权
+
+Copyright © 2024-2025 锦麒行旅游信息咨询有限公司. All Rights Reserved.
+
+沪ICP备2024085336号

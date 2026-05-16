@@ -1,0 +1,42 @@
+.section { }
+
+.swiper { margin-top: 48px; padding-bottom: 48px !important; }
+
+.slide { height: auto; display: flex; }
+
+.card {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: var(--transition);
+}
+.card:hover { box-shadow: var(--shadow-hover); transform: translateY(-3px); }
+
+.stars { display: flex; gap: 4px; margin-bottom: 16px; }
+.star { color: #F09815; font-size: 14px; }
+
+.text {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--text);
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.author {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.name { font-size: 1rem; font-weight: 600; color: var(--heading); margin-bottom: 2px; }
+.role { font-size: 13px; color: var(--brand); }
+.date { font-size: 12px; color: #aaa; }

@@ -1,0 +1,48 @@
+.footer {
+  background: var(--bg-dark);
+  color: rgba(255,255,255,0.6);
+  padding: 40px 0 24px;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.brand {
+  margin-bottom: 24px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 24px;
+}
+
+.brand img { filter: brightness(0) invert(1); opacity: 0.85; }
+
+.tagline {
+  margin-top: 10px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  flex-wrap: wrap;
+}
+
+.sep { opacity: 0.3; }
+
+.github {
+  margin-left: auto;
+  font-size: 18px;
+  color: rgba(255,255,255,0.5);
+  transition: color 0.25s;
+}
+.github:hover { color: #fff; }
+
+@media (max-width: 600px) {
+  .bottom { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .github { margin-left: 0; }
+}
