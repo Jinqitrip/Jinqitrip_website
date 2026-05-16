@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
-import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from '@vercel/speed-insights/next';
+import Script from 'next/script';
 import '@/styles/globals.css';
 
 export const metadata: Metadata = {
@@ -8,6 +7,8 @@ export const metadata: Metadata = {
   description: '锦麒行旅游官方网站 - 您的一站式出行专家',
   icons: { icon: '/assets/img/logo/logo_sqr.png' },
 };
+
+const cfToken = process.env.NEXT_PUBLIC_CF_ANALYTICS_TOKEN;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -18,8 +19,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         {children}
-        <Analytics />
-        <SpeedInsights />
+        {cfToken && (
+          <Script
+            defer
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cf-beacon={`{"token": "${cfToken}"}`}
+            strategy="afterInteractive"
+          />
+        )}
       </body>
     </html>
   );
