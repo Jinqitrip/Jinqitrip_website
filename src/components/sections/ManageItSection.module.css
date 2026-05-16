@@ -1,0 +1,39 @@
+.section { background: var(--bg-soft); }
+
+.tabs { margin-top: 28px; }
+
+.tabNav {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.tabBtn {
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  background: #fff;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.tabActive {
+  background: var(--brand);
+  color: #fff;
+  border-color: var(--brand);
+}
+
+.tabContent p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+.image {
+  min-height: 420px;
+  border-radius: var(--radius);
+}
