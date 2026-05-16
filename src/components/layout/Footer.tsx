@@ -7,7 +7,7 @@ import styles from './Footer.module.css';
 
 interface FooterProps {
   locale: string;
-  footer: { copyright: string; github: string };
+  footer: { copyright: string; github: string; company: string };
 }
 
 export default function Footer({ locale, footer }: FooterProps) {
@@ -23,6 +23,8 @@ export default function Footer({ locale, footer }: FooterProps) {
             <GithubOutlined />
             <span>{footer.github}</span>
           </Link>
+          <span className={styles.sep}>|</span>
+          <span className={styles.company}>{footer.company}</span>
           <span className={styles.sep}>|</span>
           <span>{footer.copyright}</span>
         </div>

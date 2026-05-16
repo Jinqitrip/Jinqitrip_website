@@ -55,7 +55,7 @@ export interface Translations {
     home: string; posts: string; about: string; contact: string;
   };
   footer: {
-    copyright: string; github: string;
+    copyright: string; github: string; company: string;
   };
   posts: {
     title: string; tagline: string; readMore: string; noPosts: string;
@@ -158,7 +158,7 @@ const zh: Translations = {
     ],
   },
   about: {
-    tagline: '麒行，引领您的旅程。',
+    tagline: '锦麒行，让每一次出行从容精彩。',
     title: '公司概述',
     desc: '锦麒行旅游信息咨询有限公司致力于为商务旅客和高端休闲旅客提供一站式出行服务，涵盖酒店代订、机票预定、演唱会票务预定及车辆安排。通过特色管家服务、会员代订、积分预定和独家内部票等多种方式，确保客户享受最优质、最便捷的服务。',
     marketTitle: '目标市场',
@@ -192,7 +192,7 @@ const zh: Translations = {
     mockCart: '购物车 · 3 道菜', mockCartCta: '生成双语小票 →',
   },
   nav: { home: '首页', posts: '文章一览', about: '关于', contact: '联系我们' },
-  footer: { copyright: 'Copyright © 2024-2026 锦麒行旅游. All Rights Reserved.', github: '我们的开源项目' },
+  footer: { copyright: 'Copyright © 2024-2026 锦麒行旅游. All Rights Reserved.', github: '我们的开源项目', company: '上海锦麒行旅游信息咨询有限公司' },
   posts: { title: '文章一览', tagline: '锦麒，旅行知识的源泉。', readMore: '阅读全文', noPosts: '暂无文章' },
   about_page: { breadcrumbHome: '首页', breadcrumbAbout: '关于我们' },
   contact_page: {
@@ -297,7 +297,7 @@ const en: Translations = {
     ],
   },
   about: {
-    tagline: 'Jinqitrip — leading your journey.',
+    tagline: 'Jinqitrip — every journey, effortlessly extraordinary.',
     title: 'Company Overview',
     desc: 'Jinqitrip Travel & Consulting Co., Ltd. is dedicated to providing one-stop travel services for business and leisure travelers, covering hotel reservations, flight booking, event ticketing, and transportation.',
     marketTitle: 'Target Market',
@@ -329,7 +329,7 @@ const en: Translations = {
     mockCart: 'Cart · 3 dishes', mockCartCta: 'Generate Receipt →',
   },
   nav: { home: 'Home', posts: 'Blog', about: 'About', contact: 'Contact' },
-  footer: { copyright: 'Copyright © 2024-2026 Jinqitrip. All Rights Reserved.', github: 'Our Open Source Projects' },
+  footer: { copyright: 'Copyright © 2024-2026 Jinqitrip. All Rights Reserved.', github: 'Our Open Source Projects', company: 'Shanghai Jinqitrip Travel & Consulting Co., Ltd.' },
   posts: { title: 'Blog', tagline: 'Jinqitrip — your source of travel knowledge.', readMore: 'Read More', noPosts: 'No posts yet.' },
   about_page: { breadcrumbHome: 'Home', breadcrumbAbout: 'About Us' },
   contact_page: {

@@ -35,6 +35,8 @@
 
 .sep { opacity: 0.3; }
 
+.company { color: rgba(255,255,255,0.45); font-size: 12px; }
+
 .github {
   display: inline-flex;
   align-items: center;
