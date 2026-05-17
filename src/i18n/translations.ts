@@ -55,7 +55,7 @@ export interface Translations {
     home: string; posts: string; about: string; contact: string;
   };
   footer: {
-    copyright: string; github: string; company: string;
+    copyright: string; github: string; company: string; icp: string;
   };
   posts: {
     title: string; tagline: string; readMore: string; noPosts: string;
@@ -147,7 +147,7 @@ const zh: Translations = {
     ],
   },
   serviceCounter: {
-    tagline: '旅行新选择，麟行不负所托。',
+    tagline: '旅行新选择，锦麒行不负所托。',
     title: '锦麒行旅游——',
     subtitle: '您的一站式出行专家。',
     contact: '联系我们',
@@ -192,7 +192,7 @@ const zh: Translations = {
     mockCart: '购物车 · 3 道菜', mockCartCta: '生成双语小票 →',
   },
   nav: { home: '首页', posts: '文章一览', about: '关于', contact: '联系我们' },
-  footer: { copyright: 'Copyright © 2024-2026 锦麒行旅游. All Rights Reserved.', github: '我们的开源项目', company: '上海锦麒行旅游信息咨询有限公司' },
+  footer: { copyright: 'Copyright © 2024-2026 锦麒行旅游. All Rights Reserved.', github: '我们的开源项目', company: '上海锦麒行旅游信息咨询有限公司', icp: '沪ICP备2024085336号-1' },
   posts: { title: '文章一览', tagline: '锦麒，旅行知识的源泉。', readMore: '阅读全文', noPosts: '暂无文章' },
   about_page: { breadcrumbHome: '首页', breadcrumbAbout: '关于我们' },
   contact_page: {
@@ -329,7 +329,7 @@ const en: Translations = {
     mockCart: 'Cart · 3 dishes', mockCartCta: 'Generate Receipt →',
   },
   nav: { home: 'Home', posts: 'Blog', about: 'About', contact: 'Contact' },
-  footer: { copyright: 'Copyright © 2024-2026 Jinqitrip. All Rights Reserved.', github: 'Our Open Source Projects', company: 'Shanghai Jinqitrip Travel & Consulting Co., Ltd.' },
+  footer: { copyright: 'Copyright © 2024-2026 Jinqitrip. All Rights Reserved.', github: 'Our Open Source Projects', company: 'Shanghai Jinqitrip Travel & Consulting Co., Ltd.', icp: '沪ICP备2024085336号-1' },
   posts: { title: 'Blog', tagline: 'Jinqitrip — your source of travel knowledge.', readMore: 'Read More', noPosts: 'No posts yet.' },
   about_page: { breadcrumbHome: 'Home', breadcrumbAbout: 'About Us' },
   contact_page: {

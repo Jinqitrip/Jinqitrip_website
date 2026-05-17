@@ -15,7 +15,12 @@
   flex-wrap: wrap;
 }
 
-.brand { }
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
 
 .brand img { filter: brightness(0) invert(1); opacity: 0.85; }
 
@@ -48,6 +53,16 @@
 }
 .github:hover { color: #fff; }
 .github svg { font-size: 15px; }
+
+.icp {
+  color: rgba(255,255,255,0.45);
+  font-size: 12px;
+  text-decoration: none;
+  transition: color 0.25s;
+}
+.icp:hover { color: rgba(255,255,255,0.8); }
+
+.copyright { color: rgba(255,255,255,0.5); font-size: 12px; font-weight: 400; }
 
 @media (max-width: 600px) {
   .inner { align-items: flex-start; flex-direction: column; }

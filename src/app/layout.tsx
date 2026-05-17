@@ -3,7 +3,7 @@ import Script from 'next/script';
 import '@/styles/globals.css';
 
 export const metadata: Metadata = {
-  title: '锦麒行旅游',
+  title: '锦麒行旅游 — 您的一站式出行专家',
   description: '锦麒行旅游官方网站 - 您的一站式出行专家',
   icons: { icon: '/assets/img/logo/logo_sqr.png' },
 };

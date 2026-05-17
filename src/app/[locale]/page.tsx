@@ -37,7 +37,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 <div className="icon" style={{ fontSize: 28 }}>💬</div>
                 <div className="content">
                   <h3>{locale === 'en' ? 'Contact us for attentive service.' : '联系我们，享受贴心服务。'}</h3>
-                  <p>{locale === 'en' ? 'A new travel choice — Jinqitrip delivers.' : '旅行新选择，麟行不负所托。'}</p>
+                  <p>{locale === 'en' ? 'A new travel choice — Jinqitrip delivers.' : '旅行新选择，锦麒行不负所托。'}</p>
                 </div>
               </div>
               <Link href={contactHref} className="theme-btn bg-white">

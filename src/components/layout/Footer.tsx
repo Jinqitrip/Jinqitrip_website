@@ -7,7 +7,7 @@ import styles from './Footer.module.css';
 
 interface FooterProps {
   locale: string;
-  footer: { copyright: string; github: string; company: string };
+  footer: { copyright: string; github: string; company: string; icp: string };
 }
 
 export default function Footer({ locale, footer }: FooterProps) {
@@ -26,7 +26,16 @@ export default function Footer({ locale, footer }: FooterProps) {
           <span className={styles.sep}>|</span>
           <span className={styles.company}>{footer.company}</span>
           <span className={styles.sep}>|</span>
-          <span>{footer.copyright}</span>
+          <span className={styles.copyright}>{footer.copyright}</span>
+          <span className={styles.sep}>|</span>
+          <a
+            href="https://beian.miit.gov.cn"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.icp}
+          >
+            {footer.icp}
+          </a>
         </div>
       </div>
     </footer>

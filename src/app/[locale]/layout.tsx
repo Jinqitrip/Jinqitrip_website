@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const isEn = locale === 'en';
   return {
-    title: isEn ? 'Jinqitrip' : '锦麒行旅游',
+    title: isEn ? 'Jinqitrip — Your One-Stop Travel Expert' : '锦麒行旅游 — 您的一站式出行专家',
     description: isEn
       ? 'Jinqitrip Travel & Consulting — Your One-Stop Travel Expert'
       : '锦麒行旅游官方网站 - 您的一站式出行专家',
