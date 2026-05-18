@@ -34,7 +34,7 @@ export default function GeoBanner() {
       display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 16,
       fontSize: 14, flexWrap: 'wrap',
     }}>
-      <span>检测到您可能在中国大陆，推荐访问备案域名以获得最佳体验</span>
+      <span>您似乎在中国大陆访问，前往国内站点体验更流畅 👉</span>
       <a
         href={CN_SITE}
         style={{
@@ -43,7 +43,7 @@ export default function GeoBanner() {
           fontWeight: 600, textDecoration: 'none', whiteSpace: 'nowrap',
         }}
       >
-        访问 jinqitrip.com.cn
+        www.jinqitrip.com.cn
       </a>
       <button
         onClick={dismiss}
