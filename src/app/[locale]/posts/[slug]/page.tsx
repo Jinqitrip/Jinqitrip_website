@@ -1,5 +1,13 @@
+import type { Metadata } from 'next';
 import { getT } from '@/i18n/translations';
 import { getPost, getAllSlugs } from '@/lib/posts';
+import { pageMetadata } from '@/lib/siteUrl';
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }): Promise<Metadata> {
+  const { locale, slug } = await params;
+  const post = await getPost(slug, locale);
+  return pageMetadata(locale, `/posts/${slug}/`, post?.title);
+}
 import Breadcrumb from '@/components/sections/Breadcrumb';
 import { notFound } from 'next/navigation';
 import styles from './post.module.css';

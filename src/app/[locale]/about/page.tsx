@@ -1,4 +1,11 @@
+import type { Metadata } from 'next';
 import { getT } from '@/i18n/translations';
+import { pageMetadata } from '@/lib/siteUrl';
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata(locale, '/about/');
+}
 import Breadcrumb from '@/components/sections/Breadcrumb';
 import ManageItSection from '@/components/sections/ManageItSection';
 import AboutSection from '@/components/sections/AboutSection';

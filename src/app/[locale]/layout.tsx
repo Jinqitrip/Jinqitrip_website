@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
 import { getT } from '@/i18n/translations';
+import { pageMetadata, isCnSite } from '@/lib/siteUrl';
 import AntdProvider from '@/components/AntdProvider';
 import LocaleHtmlSync from '@/components/LocaleHtmlSync';
 import NavBar from '@/components/layout/NavBar';
 import Footer from '@/components/layout/Footer';
+import GeoBanner from '@/components/GeoBanner';
 
 export async function generateStaticParams() {
   return [{ locale: 'zh' }, { locale: 'en' }];
@@ -17,6 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description: isEn
       ? 'Jinqitrip Travel & Consulting — Your One-Stop Travel Expert'
       : '锦麒行旅游官方网站 - 您的一站式出行专家',
+    ...pageMetadata(locale, '/'),
   };
 }
 
@@ -36,6 +39,7 @@ export default async function LocaleLayout({
       <NavBar locale={locale} nav={t.nav} />
       <main>{children}</main>
       <Footer locale={locale} footer={t.footer} />
+      {!isCnSite && <GeoBanner />}
     </AntdProvider>
   );
 }

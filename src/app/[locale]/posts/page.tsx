@@ -1,4 +1,11 @@
+import type { Metadata } from 'next';
 import { getT } from '@/i18n/translations';
+import { pageMetadata } from '@/lib/siteUrl';
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata(locale, '/posts/');
+}
 import { getAllPosts } from '@/lib/posts';
 import Breadcrumb from '@/components/sections/Breadcrumb';
 import Link from 'next/link';
