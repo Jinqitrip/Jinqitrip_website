@@ -33,7 +33,7 @@
   font-weight: 600;
   color: var(--heading);
   margin-bottom: 12px;
-  font-family: 'Noto Serif SC', serif;
+  font-family: 'NotoSerifSC-Latin', 'Noto Sans SC', sans-serif;
 }
 
 .cardDesc {

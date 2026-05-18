@@ -17,7 +17,7 @@
 
 .title {
   color: #fff;
-  font-family: 'Noto Serif SC', serif;
+  font-family: 'NotoSerifSC-Latin', 'Noto Sans SC', sans-serif;
   font-size: clamp(1.8rem, 5vw, 3rem);
   font-weight: 300;
   letter-spacing: 0.05em;

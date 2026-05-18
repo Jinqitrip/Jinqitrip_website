@@ -32,7 +32,7 @@
 
 .title {
   font-size: 1.125rem;
-  font-family: 'Noto Serif SC', serif;
+  font-family: 'NotoSerifSC-Latin', 'Noto Sans SC', sans-serif;
   color: var(--heading);
   font-weight: 400;
   line-height: 1.5;

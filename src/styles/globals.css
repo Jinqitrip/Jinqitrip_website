@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@300;400;600&display=swap');
 
 /* ── Design tokens ── */
 :root {
@@ -25,7 +24,7 @@
 html { scroll-behavior: smooth; overflow-x: hidden; }
 
 body {
-  font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif, 'Noto Sans SC';
   font-size: 16px;
   line-height: 1.75;
   color: var(--text);
@@ -48,9 +47,9 @@ h1, h2, h3, h4, h5, h6 {
   transition: var(--transition);
 }
 
-h1 { font-family: 'Ma Shan Zheng', serif; font-size: clamp(2.4rem, 6vw, 5.3rem); line-height: 1.1; letter-spacing: 0.06em; font-weight: 400; }
-h2 { font-family: 'Noto Serif SC', serif; font-size: clamp(1.6rem, 4vw, 3rem); line-height: 1.2; letter-spacing: 0.04em; font-weight: 300; }
-h3 { font-family: 'Noto Serif SC', serif; font-size: 1.5rem; font-weight: 400; line-height: 1.3; letter-spacing: 0.02em; }
+h1 { font-family: 'MaShanZheng-Latin', 'Noto Sans SC', sans-serif; font-size: clamp(2.4rem, 6vw, 5.3rem); line-height: 1.1; letter-spacing: 0.04em; font-weight: 900; }
+h2 { font-family: 'NotoSerifSC-Latin', 'Noto Sans SC', sans-serif; font-size: clamp(1.6rem, 4vw, 3rem); line-height: 1.2; letter-spacing: 0.03em; font-weight: 700; }
+h3 { font-family: 'NotoSerifSC-Latin', 'Noto Sans SC', sans-serif; font-size: 1.5rem; font-weight: 500; line-height: 1.3; letter-spacing: 0.02em; }
 h4 { font-size: 1.375rem; font-weight: 600; }
 h5 { font-size: 1.25rem; font-weight: 600; }
 h6 { font-size: 1.125rem; font-weight: 600; }
@@ -211,7 +210,7 @@ h6 { font-size: 1.125rem; font-weight: 600; }
   font-size: 24px; color: #fff;
   flex-shrink: 0;
 }
-.chat-items .content h3 { color: #fff; font-size: 1.25rem; font-family: 'Noto Serif SC', serif; margin-bottom: 4px; }
+.chat-items .content h3 { color: #fff; font-size: 1.25rem; font-family: 'NotoSerifSC-Latin', 'Noto Sans SC', sans-serif; margin-bottom: 4px; }
 .chat-items .content p { color: rgba(255,255,255,0.8); font-size: 14px; }
 
 /* ── Trusted client counter overlay ── */
@@ -225,7 +224,7 @@ h6 { font-size: 1.125rem; font-weight: 600; }
   color: #fff;
 }
 .counter-area { display: flex; gap: 24px; }
-.counter-items h2 { font-family: 'Noto Sans SC', sans-serif; font-size: 2.5rem; font-weight: 700; color: #fff; }
+.counter-items h2 { font-family: 'Noto Sans SC', sans-serif; font-size: 2.5rem; font-weight: 900; color: #fff; }
 .counter-items h3 { font-size: 13px; font-weight: 400; color: rgba(255,255,255,0.8); }
 
 /* ── Swiper overrides ── */

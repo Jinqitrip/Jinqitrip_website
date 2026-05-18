@@ -1,6 +1,6 @@
 .wrap { background: #fff; border-radius: var(--radius); padding: 40px; box-shadow: var(--shadow-card); }
 
-.title { font-family: 'Noto Serif SC', serif; font-size: 1.5rem; color: var(--heading); margin-bottom: 12px; }
+.title { font-family: 'NotoSerifSC-Latin', 'Noto Sans SC', sans-serif; font-size: 1.5rem; color: var(--heading); margin-bottom: 12px; }
 .desc { font-size: 14px; color: var(--text); line-height: 1.7; margin-bottom: 28px; }
 
 .form { display: flex; flex-direction: column; gap: 16px; }
@@ -28,7 +28,7 @@
   border: 1px solid var(--border);
   border-radius: var(--radius);
   font-size: 15px;
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: 'NotoSerifSC-Latin', 'Noto Sans SC', sans-serif;
   color: var(--heading);
   background: var(--bg-soft);
   transition: var(--transition);
