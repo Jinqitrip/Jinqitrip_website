@@ -11,10 +11,10 @@ export default function GeoBanner() {
   useEffect(() => {
     if (localStorage.getItem(DISMISSED_KEY)) return;
 
-    fetch('https://ip-api.com/json/?fields=countryCode')
-      .then((r) => r.json())
-      .then((data) => {
-        if (data.countryCode === 'CN') setShow(true);
+    fetch('https://ipapi.co/country/')
+      .then((r) => r.text())
+      .then((country) => {
+        if (country.trim() === 'CN') setShow(true);
       })
       .catch(() => {});
   }, []);
